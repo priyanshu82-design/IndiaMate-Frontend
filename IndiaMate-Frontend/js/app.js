@@ -15,6 +15,7 @@ import { viewItinerary } from './views/itineraryView.js';
 import { viewMedical } from './views/medicalView.js';
 import { viewProfile } from './views/profileView.js';
 import { viewMap } from './views/mapView.js'; // 👈 Full Map View Integration
+// import { viewFare } from './views/fareView.js';
 
 const viewEl = document.getElementById('view');
 const phoneShell = document.getElementById('phoneShell');
@@ -65,7 +66,8 @@ export async function render() {
     itinerary: () => viewItinerary(),
     medical: () => viewMedical(),
     profile: () => viewProfile(),
-    map: () => viewMap() // 👈 Direct Instant Render
+    map: () => viewMap(), // 👈 Direct Instant Render
+    // fare: () => viewFare()
   };
 
   if (viewEl) {
